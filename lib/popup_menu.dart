@@ -31,7 +31,7 @@ class MenuItem extends MenuItemProvider {
   String get menuTitle => title;
 
   @override
-  String get data => userInfo;
+  dynamic get data => userInfo;
 
   @override
   TextStyle get menuTextStyle =>
