@@ -12,6 +12,7 @@ abstract class MenuItemProvider {
   Widget get menuImage;
   TextStyle get menuTextStyle;
   TextAlign get menuTextAlign;
+  dynamic get data;
 }
 
 class MenuItem extends MenuItemProvider {
@@ -28,6 +29,9 @@ class MenuItem extends MenuItemProvider {
 
   @override
   String get menuTitle => title;
+
+  @override
+  String get data => userInfo;
 
   @override
   TextStyle get menuTextStyle =>
